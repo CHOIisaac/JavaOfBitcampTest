@@ -1,4 +1,4 @@
-package jb01.part08;
+package BitTest;
 
 // 0~100의 숫자를 입력 받아 90이상은 수, 80이상은 우, 70이상은 미, 60이상은 양, 이외의 점수는 어떻게 출력?
 public class Example1 {
@@ -6,20 +6,21 @@ public class Example1 {
 	public static void main(String[] args) {
 		
 		int input = Integer.parseInt(args[0]);
-			
-		if(90<=input&&input<=100) {
-			System.out.println("입력하신 값 "+input+"은 수입니다.");
-		}else if(80<=input&&input<90) {
-			System.out.println("입력하신 값 "+input+"은 우입니다.");
-		}else if(70<=input&&input<80) {
-			System.out.println("입력하신 값 "+input+"은 미입니다.");
-		}else if(60<=input&&input<70) {
-			System.out.println("입력하신 값 "+input+"은 양입니다.");
-		}else if(0<=input&&input < 60) {
-			System.out.println("입력하신 값 "+input+"은 가입니다.");
-		}else{
+		
+		if(!(0<=input)||(input>=100)) {
 			System.out.println("점수를 다시 입력해 주세요.");
+		}else if(90<=input) {
+			System.out.println("입력하신 값 "+input+"은 수입니다.");
+		}else if(80<=input) {
+			System.out.println("입력하신 값 "+input+"은 우입니다.");
+		}else if(70<=input) {
+			System.out.println("입력하신 값 "+input+"은 미입니다.");
+		}else if(60<=input) {
+			System.out.println("입력하신 값 "+input+"은 양입니다.");
+		}else {
+			System.out.println("입력하신 값 "+input+"은 가입니다.");
 		}
+	
 	}
 
 }
