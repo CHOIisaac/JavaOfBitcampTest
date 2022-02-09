@@ -1,4 +1,4 @@
-package jb01.part08;
+package BitTest;
 
 //두 수를 입력받고 입력받은 수가 짝수, 홀수, 3의 배수를 판단하기 
 public class Test3 {
@@ -7,15 +7,23 @@ public class Test3 {
 		int i = Integer.parseInt(args[0]);
 		int j = Integer.parseInt(args[1]);
 		
-		if(i%2==0) {
+		if(i%2==0&&i%3!=0) {
 			System.out.println("입력하신 1번째 인자값 "+i+"은/는 짝수이며 3의 배수가 아닙니다.");
-		}else if(i%2==1) {
+		}else if(i%2==1&&i%3==0) {
 			System.out.println("입력하신 1번째 인자값 "+i+"은/는 홀수이며 3의 배수입니다.");
+		}else if(i%2==0&&i%3==0) {
+			System.out.println("입력하신 1번째 인자값 "+i+"은/는 짝수이면 3의 배수입니다.");
+		}else {
+			System.out.println("입력하신 1번째 인자값 "+i+"은/는 홀수이며 3의 배수가 아닙니다.");
 		}
-		if(j%2==0) {
+		if(j%2==0&&i%3!=0) {
 			System.out.println("입력하신 2번째 인자값 "+j+"은/는 짝수이며 3의 배수가 아닙니다.");
-		}else if(j%2==1) {
+		}else if(j%2==1&&j%3==0) {
 			System.out.println("입력하신 2번째 인자값 "+j+"은/는 홀수이며 3의 배수입니다.");
+		}else if(j%2==0&&j%3==0) {
+			System.out.println("입력하신 1번째 인자값 "+j+"은/는 짝수이면 3의 배수입니다.");
+		}else {
+			System.out.println("입력하신 1번째 인자값 "+j+"은/는 홀수이며 3의 배수가 아닙니다.");
 		}
 	}
 
