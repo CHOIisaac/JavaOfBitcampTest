@@ -12,10 +12,13 @@ public class Example3 {
 			for(int i = input1; i <=input2; i++) {
 				sum += i;
 			}
-		}else {
+		}else if(input1 > input2){
 			for(int i = input2; i<=input1; i++ ) {
-				sum -= i;
+				sum += i;
 			}
+		}else {
+			System.out.println("입력값이 같습니다.");
+			return;
 		}
 		System.out.println(sum);
 	}
