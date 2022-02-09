@@ -1,4 +1,4 @@
-package jb01.part08;
+package BitTest;
 
 // 두 수를 입력받고 두 수를 비교하여 더하기/빼기 예제
 // 첫번째 인수가 크면 빼고, 적으면 더하기 
@@ -9,9 +9,11 @@ public class Test2 {
 		int j = Integer.parseInt(args[1]);
 		
 		if(i>j) {
-			System.out.println("첫번째인수:"+i+", 두번째인수:"+j+","+i+"-"+j+"="+(i-j));
+			System.out.println("첫번째 인수:"+i+", 두번째 인수:"+j+","+i+"-"+j+"="+(i-j));
 		}else if(i < j) {
-			System.out.println("첫번째인수:"+i+", 두번째인수:"+j+","+j+"+"+i+"="+(i+j));
+			System.out.println("첫번째 인수:"+i+", 두번째 인수:"+j+","+j+"+"+i+"="+(i+j));
+		}else {
+			System.out.println("첫번째 인수와 두번째 인수가 같습니다.");
 		}
 	}
 
