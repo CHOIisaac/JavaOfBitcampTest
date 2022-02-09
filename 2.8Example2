@@ -6,11 +6,12 @@ public class Example2 {
 	public static void main(String[] args) {
 		int input = Integer.parseInt(args[0]);
 		
-		for(int i = 1; i <=9; i++) {
-			System.out.println(input+"*"+i+"="+input*i);
-			
+		if(!(0<input)||(input>10)) {
+			System.out.println("1~9의 단수를 입력해주세요.");
+		}else {
+			for(int i = 1; i <=9; i++) {
+				System.out.println(input+"*"+i+"="+input*i);
 		}
-		
 	}
-
+	}
 }
