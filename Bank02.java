@@ -30,7 +30,7 @@ public class Bank02 {
 		option();
 	}
 	//method
-	//옵션
+	//옵션(0누르면 입금, 1누르면 출금)
 	public void option() {
 		if(command==0) {
 			deposit();
