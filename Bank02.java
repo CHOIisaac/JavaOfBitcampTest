@@ -38,6 +38,7 @@ public class Bank02 {
 			withdraw();
 		}else {
 			System.out.println("잘못 입력하셨습니다.");
+			System.exit(0);
 		}
 	}
 	//입금 
