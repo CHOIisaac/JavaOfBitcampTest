@@ -1,4 +1,4 @@
-package a.base.ex07;
+//package a.base.ex07;
 
 //주어진 년도의 월에 해당하는 말일을 계산하는 프로그램 만들기. 윤년인 경우 아래
 //1. 4의 배수인 해는 윤년.
@@ -8,11 +8,11 @@ public class Prob06 {
 
 	public static void main(String[] args) {
 		
-		int year = 400;
+		int year = 2020;
 		int month = 2;
 		int maxDay = 0;
 		
-		if(year % 4 == 0 || ( year % 100 ==0 && year % 400 ==0) ){
+		if(year % 4 == 0 || year % 400 ==0 ){
 			if(month == 2) {
 				maxDay = 29;
 			}else {
