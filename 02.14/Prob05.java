@@ -1,4 +1,4 @@
-//package a.base.ex06;
+package a.base.ex06;
 
 import java.util.Arrays;
 
@@ -21,9 +21,11 @@ public class Prob05 {
 		}
 		for(int i = 0; i < array.length; i++) {
 			if(array[i] == array[6]){
-			System.out.print(+array[6]+"");
+			System.out.print(array[6]+"]");
+		}else if( array[i]== array[0] ) {
+			System.out.print("["+array[0]+", ");
 		}else{
-			System.out.print(+array[i]+", ");
+			System.out.print(array[i]+", ");
 		}
 	}
 //	System.out.println(Arrays.toString(array));
