@@ -9,7 +9,7 @@ public class Prob07 {
 		//명령행 매개변수로 9를 입력한 경우 
 		int input = Integer.parseInt(args[0]);
 		
-		if(input == 0 || input < 0 || input % 2 == 0) {
+		if(input <= 0 || input % 2 == 0) {
 			System.out.println("0보다 큰 홀수만 입력 가능합니다.");
 			return;
 		}
