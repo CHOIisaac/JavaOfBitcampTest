@@ -50,19 +50,19 @@ class Circle extends Shape{
 
 class Rectangular extends Shape{
 	private double width;
-	private double hight;
+	private double height;
 	
 	public Rectangular() {
 	}
-	public Rectangular(String name, double width, double hight) {
+	public Rectangular(String name, double width, double height) {
 		super(name);
 		this.width = width;
-		this.hight = hight;
+		this.hight = height;
 		
 	}
 	
 	public void calculationArea() {
-		super.area = width * hight;
+		super.area = width * height;
 	}
 	
 }
