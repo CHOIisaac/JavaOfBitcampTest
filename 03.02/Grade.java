@@ -13,30 +13,45 @@ public class Grade {
 			PrintWriter pw = new PrintWriter(new FileOutputStream(fileName, true));
 			
 			String line = "";
-			String[] array = null;
 			
-			while((line = br.readLine()) != null) {
+			int sum = 0;
+			int result = 0;
+			String[] array = null;
+			int count = 0;
+			
+			while((line=br.readLine()) != null) {
 				
 				array = line.split(",");
-				pw.println(array[0]+"의 점수는 "+array[1]+"점 입니다.");
 				
+				sum = Integer.parseInt(array[1]);
+				
+				pw.println(array[0]+"의 점수는 "+array[1]+"점 입니다.");
+				System.out.println(array[0]+"의 점수는 "+array[1]+"점 입니다.");
+				result += sum;
+				count++;
 			}
+			pw.println("모두의 총점은 "+result+"점 입니다.");
+			System.out.println("모두의 총점은 "+result+"점 입니다.");
+			pw.println("모두의 평균는 "+result/count+"점 입니다.");
+			System.out.println("모두의 평균는 "+result/count+"점 입니다.");
+			
 			pw.flush();
 			pw.close();
 			
 		} catch (Exception e) {
-		
+		e.printStackTrace();
 		}
 		
 		
-	}
+	}//end of method
 
 	public static void main(String[] args) {
 		
 		Grade grade = new Grade();
-		String fileName = "/Users/choiingyu/eclipse-workspace/Bitcamp02/score.txt";
+		String fileName = "C:\\workspace\\HOMEWORK\\files\\score.txt";
 		grade.printGrade(fileName);
 		
-	}
+	}//end of main
 
-}
+}//end of class
+
